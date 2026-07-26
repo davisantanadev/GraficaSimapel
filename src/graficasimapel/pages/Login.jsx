@@ -8,7 +8,7 @@ import {
     Mail,
     ShieldCheck,
 } from 'lucide-react';
-import { supabase } from '../SupabaseClient';
+import { supabase, isSupabaseConfigured } from '../SupabaseClient';
 import { createPendingProfile, createSignupAccessRequest, PROFILE_STATUS } from '../lib/auth';
 
 const initialFeedback = { type: '', message: '' };
@@ -291,6 +291,22 @@ export default function Login() {
         return (
             <div className="login-status-screen">
                 <p>Carregando...</p>
+            </div>
+        );
+    }
+
+    if (!isSupabaseConfigured) {
+        return (
+            <div className="login-status-screen">
+                <h1>Erro de configuracao do Supabase</h1>
+                <p>
+                    O deploy nao esta com as variaveis de ambiente do Supabase
+                    corretamente configuradas.
+                </p>
+                <p>
+                    Configure <strong>NEXT_PUBLIC_SUPABASE_URL</strong> e{' '}
+                    <strong>NEXT_PUBLIC_SUPABASE_ANON_KEY</strong> no painel do Vercel.
+                </p>
             </div>
         );
     }
