@@ -305,7 +305,8 @@ export default function Login() {
                 </p>
                 <p>
                     Configure <strong>NEXT_PUBLIC_SUPABASE_URL</strong> e{' '}
-                    <strong>NEXT_PUBLIC_SUPABASE_ANON_KEY</strong> no painel do Vercel.
+                    <strong>NEXT_PUBLIC_SUPABASE_ANON_KEY</strong> ou{' '}
+                    <strong>NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY</strong> no painel do Vercel.
                 </p>
             </div>
         );
