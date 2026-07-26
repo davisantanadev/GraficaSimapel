@@ -1,0 +1,25 @@
+{
+  "name": "graficasimapel",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --webpack --port 3001",
+    "build": "next build --webpack",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.99.0",
+    "date-fns": "^4.4.0",
+    "lucide-react": "^1.14.0",
+    "next": "^16.2.6",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "recharts": "^3.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5"
+  }
+}
