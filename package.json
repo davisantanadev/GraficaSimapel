@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "workspaces": [
+    "src/graficasimapel"
+  ],
+  "scripts": {
+    "dev": "npm --prefix src/graficasimapel run dev",
+    "build": "npm --prefix src/graficasimapel run build",
+    "start": "npm --prefix src/graficasimapel run start"
+  }
+}
